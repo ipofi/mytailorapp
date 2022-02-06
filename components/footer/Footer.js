@@ -23,12 +23,14 @@ export const Footer = () => {
       </div>
       <div className={styles.across}>
         <h5>Contact Us</h5>
-        <p>Phone</p>
-        <p>Number</p>
+        <p>example@email.com</p>
+        <p>+234 xxx xxxx xxx</p>
       </div>
       <div className={styles.bottom}>
         <div>
-          Available On:
+          <p> Available On:</p>
+        </div>
+        <div>
           <Image
             src='/Google_Play-Badge-Logo.wine.svg'
             alt='google play store'
@@ -42,6 +44,9 @@ export const Footer = () => {
             height={40}
           />
         </div>
+      </div>
+      <div>
+        <p> MyTailorApp © {new Date().getFullYear()}</p>
       </div>
     </footer>
   );
