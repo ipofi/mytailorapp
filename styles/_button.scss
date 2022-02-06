@@ -1,0 +1,37 @@
+.button-text {
+  background: none;
+  border: none;
+  color: $primary-color;
+  cursor: pointer;
+}
+
+.button {
+  background: none;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: $primary-color;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  transition: 0.3s;
+
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  &:hover {
+    background: darken($color: $primary-color, $amount: 30);
+    color: white;
+  }
+}
+
+.buttonLink {
+  border: 2px solid $primary-color;
+  padding: 10px 20px;
+
+  &:hover {
+    cursor: default;
+  }
+}

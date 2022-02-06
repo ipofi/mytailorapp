@@ -1,0 +1,36 @@
+@import './variables';
+@import './button';
+
+.nav {
+  color: $primary-color;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  font-size: larger;
+
+  div {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    column-gap: 20px;
+
+    span {
+      display: block;
+      margin-block-start: 1.33em;
+      margin-block-end: 1.33em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      transition: 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        color: darken($color: $primary-color, $amount: 30);
+        border-bottom: 1px solid darken($color: $primary-color, $amount: 30);
+      }
+    }
+  }
+
+  div:nth-child(2) {
+    justify-content: start !important;
+  }
+}
