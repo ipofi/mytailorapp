@@ -22,7 +22,7 @@
   margin-inline-end: 0px;
 
   &:hover {
-    background: darken($color: $primary-color, $amount: 30);
+    background: darken($color: $primary-color, $amount: 10);
     color: white;
   }
 }

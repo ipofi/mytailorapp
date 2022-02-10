@@ -7,6 +7,8 @@
   grid-template-columns: auto auto auto;
   justify-content: space-around;
   font-size: larger;
+  position: sticky;
+  z-index: 2;
 
   div {
     display: grid;
@@ -22,7 +24,13 @@
       margin-inline-end: 0px;
       transition: 0.3s;
 
-      &:hover {
+      // &:hover {
+      //   cursor: pointer;
+      //   color: darken($color: $primary-color, $amount: 30);
+      //   border-bottom: 1px solid darken($color: $primary-color, $amount: 30);
+      // }
+
+      &.active {
         cursor: pointer;
         color: darken($color: $primary-color, $amount: 30);
         border-bottom: 1px solid darken($color: $primary-color, $amount: 30);
@@ -33,4 +41,28 @@
   div:nth-child(2) {
     justify-content: start !important;
   }
+}
+
+.loginMenu {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: end;
+}
+
+.signupMenu {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.customerMenu {
+  display: grid;
+  grid-template-rows: auto;
+  margin-left: 23vw;
+}
+
+.vendorMenu {
+  display: grid;
+  grid-template-rows: auto;
+  margin-left: 16vw;
 }

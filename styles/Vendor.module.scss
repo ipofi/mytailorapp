@@ -1,0 +1,43 @@
+@import './variables';
+@import './button';
+
+.vendor {
+  background-color: $primary-color;
+  width: 40vw;
+  padding: 3rem;
+  color: white;
+  position: absolute;
+  z-index: 7;
+
+  border-radius: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  .formFields {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .submit {
+    display: grid;
+    justify-items: center;
+
+    .button {
+      background: white;
+      border: 1px solid white;
+      color: $primary-color;
+      padding: 0.5rem 3rem;
+      margin: 0;
+    }
+
+    small {
+      margin: 5px 0;
+
+      .link {
+        text-decoration-line: underline !important;
+      }
+    }
+  }
+}

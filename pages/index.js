@@ -23,7 +23,7 @@ export default function Home() {
           <button>Join us!</button>
         </div>
         <div>
-          <Image src='/tailor.png' alt='Vercel Logo' width={800} height={400} />
+          <Image src='/tailor.png' alt='tailor' width={800} height={400} />
         </div>
       </header>
       <section className={styles.one}>

@@ -9,6 +9,8 @@
     text-align: center;
     padding: 2rem 0;
     color: white;
+    position: static;
+    z-index: 1;
 
     button {
       border: none;
