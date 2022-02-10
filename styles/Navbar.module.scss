@@ -2,13 +2,17 @@
 @import './button';
 
 .nav {
+  background-color: white;
   color: $primary-color;
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-around;
   font-size: larger;
+  position: -webkit-sticky; /* Safari */
   position: sticky;
+  top: 0;
   z-index: 2;
+  transition: .1s linear;
 
   div {
     display: grid;
@@ -43,6 +47,17 @@
   }
 }
 
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .nav {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);  
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+}
+
+
+
 .loginMenu {
   display: grid;
   grid-template-rows: auto;
@@ -66,3 +81,4 @@
   grid-template-rows: auto;
   margin-left: 16vw;
 }
+

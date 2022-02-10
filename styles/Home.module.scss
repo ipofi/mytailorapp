@@ -17,6 +17,10 @@
       border-radius: 5px;
       padding: 10px 40px;
       color: $primary-color;
+      
+      &:hover {
+        background-color: lighten($color: $primary-color, $amount: 90);
+      }
     }
   }
 

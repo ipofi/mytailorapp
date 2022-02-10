@@ -5,7 +5,7 @@ import { TextField } from '@mui/material';
 import Link from 'next/link';
 import paths from '../../routes';
 
-export const Customer = () => {
+export const Customer = ({handleMenuSwitch}) => {
   return (
     <div className={styles.customer}>
       <div>Welcome Back</div>
@@ -45,7 +45,13 @@ export const Customer = () => {
           <small>
             No account?{' '}
             <span className={styles.link}>
-              <Link href={paths.signUp}>Sign up</Link>
+              <span
+                onClick={() => {
+                  handleMenuSwitch('signup');
+                }}
+              >
+                Sign up
+              </span>
             </span>
           </small>
         </div>

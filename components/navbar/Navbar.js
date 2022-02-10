@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../../styles/Navbar.module.scss';
 import { Login, Signup, Customer, VendorForm } from '..';
+import { fontSize } from '@mui/system';
 
 export const Navbar = () => {
   const [login, setLogin] = useState(false);
@@ -8,22 +9,51 @@ export const Navbar = () => {
   const [customer, setCustomer] = useState(false);
   const [vendor, setVendor] = useState(false);
 
+  const [scrolled, setScrolled] = useState(false);
+
   const menuReset = () => {
-    setLogin(false)
-    setSignUp(false)
-    setCustomer(false)
-    setVendor(false)
-  }
+    setLogin(false);
+    setSignUp(false);
+    setCustomer(false);
+    setVendor(false);
+  };
+
+  const handleSwitch = (menu) => {
+    const menus = {
+      signup: () => {
+        setSignUp(true);
+        setLogin(false);
+        setCustomer(false);
+        setVendor(false);
+      },
+      login: () => {
+        setLogin(true);
+        setSignUp(false);
+        setCustomer(false);
+        setVendor(false);
+      },
+    };
+    return menus[menu]();
+  };
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    offset > 70 ? setScrolled(true) : setScrolled(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
 
   return (
     <>
-      <nav className={styles.nav}>
+      <nav className={styles.nav} style={{ fontSize: scrolled ? 'large' : 'larger', boxShadow: scrolled && "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}}>
         <div>
           <span>Dashboard</span>
           <span
             className={vendor && styles.active}
             onMouseEnter={() => {
-              menuReset()
+              menuReset();
               setVendor(!vendor);
             }}
           >
@@ -69,7 +99,7 @@ export const Navbar = () => {
             setLogin(!login);
           }}
         >
-          <Login />
+          <Login handleMenuSwitch={handleSwitch} />
         </div>
       )}
 
@@ -80,7 +110,7 @@ export const Navbar = () => {
             setSignUp(!signup);
           }}
         >
-          <Signup />
+          <Signup handleMenuSwitch={handleSwitch} />
         </div>
       )}
 
@@ -91,7 +121,7 @@ export const Navbar = () => {
             setCustomer(!customer);
           }}
         >
-          <Customer />
+          <Customer handleMenuSwitch={handleSwitch} />
         </div>
       )}
 
@@ -102,7 +132,7 @@ export const Navbar = () => {
             setVendor(!vendor);
           }}
         >
-          <VendorForm />
+          <VendorForm handleMenuSwitch={handleSwitch} />
         </div>
       )}
     </>

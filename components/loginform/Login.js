@@ -1,18 +1,16 @@
 import React from 'react';
-import styles from '../../styles/Signup.module.scss';
+import styles from '../../styles/Login.module.scss';
 import Box from '@mui/material/Box';
 import { TextField } from '@mui/material';
 import Link from 'next/link';
 import paths from '../../routes';
+import { Signup } from '..';
 
-export const Signup = () => {
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-  };
+export const Login = ({ handleMenuSwitch }) => {
   return (
-    <div className={styles.signup}>
-      <div>Please fill in all spaces to sign up.</div>
-      <form onSubmit={handleSubmit}>
+    <div className={styles.login}>
+      <div>Welcome Back</div>
+      <form>
         <div>
           <Box
             component='form'
@@ -26,24 +24,10 @@ export const Signup = () => {
           >
             <TextField
               fullWidth
-              label='Name'
+              label='Email Address / Store Name'
               variant='outlined'
               size='small'
-              required
-            />
-            <TextField
-              fullWidth
-              label='Email'
-              variant='outlined'
-              size='small'
-              required
-            />
-            <TextField
-              fullWidth
-              label='Phone Number'
-              variant='outlined'
-              size='small'
-              required
+              required={true}
             />
             <TextField
               fullWidth
@@ -57,12 +41,18 @@ export const Signup = () => {
         </div>
         <div className={styles.submit}>
           <button className={styles.button} type='submit'>
-            Sign up
+            Login
           </button>
           <small>
-            Already have an account?{' '}
+            No account?{' '}
             <span className={styles.link}>
-              <Link href={paths.login}>Login</Link>
+              <span
+                onClick={() => {
+                  handleMenuSwitch('signup');
+                }}
+              >
+                Sign up
+              </span>
             </span>
           </small>
         </div>

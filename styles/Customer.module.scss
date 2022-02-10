@@ -30,12 +30,17 @@
       color: $primary-color;
       padding: 0.5rem 3rem;
       margin: 0;
+
+      &:hover {
+        background-color: darken($color: white, $amount: 3);
+      }
     }
 
     small {
       margin: 5px 0;
 
       .link {
+        cursor: pointer;
         text-decoration-line: underline !important;
       }
     }
