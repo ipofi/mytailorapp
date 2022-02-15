@@ -34,7 +34,9 @@ export default function Home() {
           </div>
         </header>
 
-        <section className='row text-center justify-content-center'>
+        <section
+          className={`row text-center justify-content-center py-3 ${styles.primaryColor}`}
+        >
           <div className='col-md-7 col-sm-1'>
             <h3>Our Services</h3>
             <p>
