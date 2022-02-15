@@ -37,7 +37,7 @@ export default function Home() {
         <section
           className={`row text-center justify-content-center py-3 ${styles.primaryColor}`}
         >
-          <div className='col-md-7 col-sm-1'>
+          <div className='col-md-7 col-sm-7 col-xs-1'>
             <h3>Our Services</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -46,7 +46,7 @@ export default function Home() {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div>
+          <div className='col-8'>
             <button className={`${styles.button} mx-sm-1`}>Designer</button>
             <button className={`${styles.button}  mx-sm-1`}>Tailor</button>
             <button className={`${styles.button}  mx-sm-1`}>Shoes</button>
@@ -58,7 +58,7 @@ export default function Home() {
           className={`row justify-content-lg-center ${styles.feature_one} gx-0`}
         >
           <div
-            className='col-sm-1 col-md-6 col-lg-6'
+            className=' col-sm-6 col-md-6 col-lg-6'
             style={{ position: 'relative' }}
           >
             <Image
@@ -69,7 +69,7 @@ export default function Home() {
               layout='fill'
             />
           </div>
-          <div className='col-sm-1 col-md-6 col-lg-6'>
+          <div className='col-sm-6 col-md-6 col-lg-6'>
             <h3>Feature that is amazing</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -84,7 +84,7 @@ export default function Home() {
         <section
           className={`row justify-content-lg-center ${styles.feature_two} gx-0`}
         >
-          <div className='col-sm-1 col-md-6 col-lg-6'>
+          <div className='col-sm-6 col-md-6 col-lg-6'>
             <h3>Feature that is amazing</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -95,7 +95,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className='col-sm-1 col-md-6 col-lg-6'
+            className='col-sm-6 col-md-6 col-lg-6'
             style={{ position: 'relative' }}
           >
             <Image
@@ -112,7 +112,7 @@ export default function Home() {
           className={`row justify-content-lg-center ${styles.feature_one} gx-0`}
         >
           <div
-            className='col-sm-1 col-md-6 col-lg-6'
+            className='col-sm-6 col-md-6 col-lg-6'
             style={{ position: 'relative' }}
           >
             <Image
@@ -123,7 +123,7 @@ export default function Home() {
               layout='fill'
             />
           </div>
-          <div className='col-sm-1 col-md-6 col-lg-6'>
+          <div className='col-sm-6 col-md-6 col-lg-6'>
             <h3>Feature that is amazing</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -138,7 +138,7 @@ export default function Home() {
         <section
           className={`row text-center justify-content-center mt-2 ${styles.five}`}
         >
-          <div className='col-md-7 col-sm-1'>
+          <div className='col-md-7 col-sm-7'>
             <h2>Your value preposition</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -192,13 +192,13 @@ export default function Home() {
         <section
           className={`row justify-content-center text-center align-items-center ${styles.seven}`}
         >
-          <div className='col-sm-1 col-md-4'>
+          <div className='col-sm-4 col-md-4'>
             <p>
               <strong> Ready to get started?</strong>
             </p>
             <p>Sign up or Contact us</p>
           </div>
-          <div className='col-sm-1 col-md-4'>
+          <div className='col-sm-4 col-md-4'>
             <button className={styles.button}>Get Started</button>
             <button className={styles.button}>Contact Us</button>
           </div>
