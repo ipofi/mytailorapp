@@ -1,12 +1,12 @@
 @import './variables';
 @import './button';
 
-.container {
+.home {
   // padding: 0 2rem;
 
   header {
     background-color: $primary-color;
-    text-align: center;
+    // text-align: center;
     padding: 2rem 0;
     color: white;
     position: static;
@@ -20,6 +20,42 @@
       
       &:hover {
         background-color: lighten($color: $primary-color, $amount: 90);
+      }
+    }
+  }
+
+  .feature_one{
+     color: white;
+
+    div:nth-child(2) {
+      background-color: $primary-color;
+      padding: 3rem 2rem;
+
+      // p {
+      //   width: 30vw;
+      //   margin-bottom: 20px;
+      // }
+
+      a.buttonLink {
+        border-color: white;
+      }
+    }
+  }
+
+  .feature_two {
+     color: white;
+
+    div:nth-child(1) {
+      background-color: $primary-color;
+      padding: 3rem 2rem;
+
+      // p {
+      //   width: 30vw;
+      //   margin-bottom: 20px;
+      // }
+
+      a.buttonLink {
+        border-color: white;
       }
     }
   }
@@ -40,21 +76,16 @@
   }
 
   section.two {
-    display: grid;
-    grid-template-columns: 49vw 49vw;
     color: white;
 
     div:nth-child(2) {
       background-color: $primary-color;
       padding: 3rem 2rem;
-      display: grid;
-      grid-auto-flow: row;
-      align-content: center;
 
-      p {
-        width: 30vw;
-        margin-bottom: 20px;
-      }
+      // p {
+      //   width: 30vw;
+      //   margin-bottom: 20px;
+      // }
 
       a.buttonLink {
         border-color: white;
@@ -63,23 +94,16 @@
   }
 
   section.three {
-    display: grid;
-    grid-template-columns: 49vw 49vw;
     color: white;
-    height: 50vh;
-    margin-top: -2px;
 
     div:nth-child(1) {
       background-color: $primary-color;
       padding: 3rem 2rem;
-      display: grid;
-      grid-auto-flow: row;
-      align-content: center;
 
-      p {
-        width: 30vw;
-        margin-bottom: 20px;
-      }
+      // p {
+      //   width: 30vw;
+      //   margin-bottom: 20px;
+      // }
 
       a.buttonLink {
         border-color: white;
@@ -88,24 +112,17 @@
   }
 
   section.four {
-    display: grid;
-    grid-template-columns: 49vw 49vw;
     color: white;
-    height: 50vh;
-    margin: 110px 0;
 
     div:nth-child(2) {
       background-color: $primary-color;
       padding: 3rem 2rem;
-      display: grid;
-      grid-auto-flow: row;
-      align-content: center;
 
-      p {
-        width: 30vw;
-        margin-bottom: 20px;
-      }
-
+      // p {
+      //   width: 30vw;
+      //   margin-bottom: 20px;
+      // }
+      
       a.buttonLink {
         border-color: white;
       }
@@ -114,43 +131,43 @@
 
   section.five {
     background-color: $primary-color;
-    text-align: center;
+    // text-align: center;
     padding: 2rem 0;
-    color: white;
-    margin-top: 113px;
+    // color: white;
+    // margin-top: 113px;
 
-    display: grid;
-    grid-template-columns: 70vw;
-    justify-content: space-evenly;
+    // display: grid;
+    // grid-template-columns: 70vw;
+    // justify-content: space-evenly;
 
-    div > h5 {
-      margin: 5px 0;
-    }
+    // div > h5 {
+    //   margin: 5px 0;
+    // }
 
-    .avatars {
-      display: grid;
-      grid-auto-flow: column;
-    }
+    // .avatars {
+    //   display: grid;
+    //   grid-auto-flow: column;
+    // }
   }
 
   section.six {
-    text-align: center;
+    // text-align: center;
     padding: 2rem 0;
 
-    div > h5 {
-      margin: 5px 0;
-    }
+    // div > h5 {
+    //   margin: 5px 0;
+    // }
   }
 
   section.seven {
     padding: 2rem 0 ;
     color: white;
     background-color: $primary-color;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
+    // display: grid;
+    // grid-template-columns: auto auto;
+    // justify-content: space-evenly;
+    // align-items: center;
+    // justify-items: center;
 
 
     button {
@@ -161,3 +178,4 @@
     }
   }
 }
+
