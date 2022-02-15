@@ -17,15 +17,15 @@
       border-radius: 5px;
       padding: 10px 40px;
       color: $primary-color;
-      
+
       &:hover {
         background-color: lighten($color: $primary-color, $amount: 90);
       }
     }
   }
 
-  .feature_one{
-     color: white;
+  .feature_one {
+    color: white;
 
     div:nth-child(2) {
       background-color: $primary-color;
@@ -42,8 +42,12 @@
     }
   }
 
+  .primaryColor {
+    color: $primary-color;
+  }
+
   .feature_two {
-     color: white;
+    color: white;
 
     div:nth-child(1) {
       background-color: $primary-color;
@@ -122,7 +126,7 @@
       //   width: 30vw;
       //   margin-bottom: 20px;
       // }
-      
+
       a.buttonLink {
         border-color: white;
       }
@@ -160,7 +164,7 @@
   }
 
   section.seven {
-    padding: 2rem 0 ;
+    padding: 2rem 0;
     color: white;
     background-color: $primary-color;
     // display: grid;
@@ -168,7 +172,6 @@
     // justify-content: space-evenly;
     // align-items: center;
     // justify-items: center;
-
 
     button {
       border-color: white;
@@ -178,4 +181,3 @@
     }
   }
 }
-
