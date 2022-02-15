@@ -1,4 +1,4 @@
-export * from './navbar';
+export * from './menubar';
 export * from './footer';
 export * from './loginform';
 export * from './signupform';
