@@ -158,7 +158,7 @@ export const MenuBar = () => {
         expand='lg'
         bg='light'
         variant='light'
-        fixed='top'
+        sticky='top'
       >
         <Container>
           <Navbar.Brand href='#/'>MyTailorApp</Navbar.Brand>
