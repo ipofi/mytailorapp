@@ -46,7 +46,7 @@ export default function Home() {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className='col-8'>
+          <div className=''>
             <button className={`${styles.button} mx-sm-1`}>Designer</button>
             <button className={`${styles.button}  mx-sm-1`}>Tailor</button>
             <button className={`${styles.button}  mx-sm-1`}>Shoes</button>
